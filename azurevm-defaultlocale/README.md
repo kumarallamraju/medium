@@ -13,5 +13,4 @@ az group create --name nukeRG -l westus2
 
 az deployment group create -g nukeRG --template-file azuredeploy.json --parameters azuredeploy.parameters.json --parameters adminUsername=azureuser --parameters adminPassword=YOURADMINPASSWORD --parameters dnsLabelPrefix=sp12282020
 
-e.g. 
-az deployment group create -g nukeRG --name rollout0 --template-uri https://raw.githubusercontent.com/kumarallamraju/medium/master/azurevm-defaultlocale/azuredeploy.json --parameters https://raw.githubusercontent.com/kumarallamraju/medium/master/azurevm-defaultlocale/azuredeploy.parameters.json --parameters adminUsername=kumara --parameters adminPassword=Azure12345678# --parameters dnsLabelPrefix=sp12282020
+
